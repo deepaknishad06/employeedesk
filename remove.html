@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Unauthorized Action</title>
+    <style>
+      body {
+        background-color: #f8d7da;
+        color: #721c24;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .warning-box {
+        background-color: #f5c6cb;
+        border: 2px solid #f1aeb5;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+
+      .warning-box h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      .warning-box p {
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+
+      .go-back-button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .go-back-button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="warning-box">
+      <h1>⚠️ Unauthorized Action</h1>
+      <p>
+        You are not allowed to perform the "Remove Employee" action.<br />
+        Only authorized personnel can remove employees.
+      </p>
+      <button class="go-back-button" onclick="history.back()">
+        🔙 Go Back
+      </button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="updemp.css" />
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <img
+        class="profile-image"
+        src="https://w7.pngwing.com/pngs/577/307/png-transparent-human-with-circle-logo-national-cyber-security-alliance-organization-drupal-association-information-internet-icon-s-customers-free-miscellaneous-company-logo.png"
+        alt="Profile"
+      />
+      <h3 class="emp-head">Employee Directory Task</h3>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="employee.html">Employee</a></li>
+        <li><a href="form.html">Contact</a></li>
+        <li><a href="helpdesk.html"> Help Desk</a></li>
+         <li><a href="about.html">About</a></li>
+      </ul>
+      </ul>
+    </nav>
+    <section class="update-employee-section">
+      <h2>Update Employee Details</h2>
+      <form class="update-form">
+        <label for="empId">Employee ID:</label>
+        <input type="text" id="empId" name="empId" required />
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="position">Position:</label>
+        <input type="text" id="position" name="position" />
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" />
+
+        <button type="submit" class="update-btn">Update</button>
+      </form>
+    </section>
+    <!-- 🟦 Home Button Section Start -->
+    <style>
+      .home-button-container {
+        margin: 50px 0 20px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .home-button {
+        background-color: #3f51b5;
+        color: white;
+        text-decoration: none;
+        padding: 12px 25px;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .home-button:hover {
+        background-color: #303f9f;
+      }
+    </style>
+
+   
+    <!-- 🟦 Home Button Section End -->
+
+    <script>
+      document
+        .querySelector(".contact-form form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); 
+
+          alert("Form submitted successfully!");
+          this.reset();
+        });
+    </script>
+  </body>
+</html>

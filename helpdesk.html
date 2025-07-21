@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="helpdesk.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="profile-image"
+        src="https://w7.pngwing.com/pngs/577/307/png-transparent-human-with-circle-logo-national-cyber-security-alliance-organization-drupal-association-information-internet-icon-s-customers-free-miscellaneous-company-logo.png"
+        alt="Profile"
+      />
+      <h3 class="emp-head">Employee Directory Task</h3>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="employee.html">Employee</a></li>
+        <li><a href="form.html">Contact</a></li>
+        <li><a href="helpdesk.html">Help Desk</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <section class="helpdesk">
+      <h3>FAQs</h3>
+      <ul>
+        <li>
+          <strong>Q:</strong>How to add a new employee? <br /><strong>A:</strong
+          >Go to Add Employee under Employee Section.
+        </li>
+        <li>
+          <strong>Q:</strong> How can I update details? <br /><strong
+            >A:
+          </strong>
+          Use the "Update Employee" option.
+        </li>
+        <li>
+          <strong>Q:</strong>How to Register? <br /><strong>A:</strong>Go to
+          Forms in Menu Bar.
+        </li>
+      </ul>
+    </section>
+    <aside>
+      <section class="contactsupport">
+        <form class="cnsform">
+          <h3>Contact Support</h3>
+          <label for="Name">Your Name</label>
+          <input type="text" id="name" required />
+
+          <label for="email">Email</label>
+          <input type="text" id="email" required />
+
+          <label for="contact">Contact No.</label>
+          <input type="number" id="contact" required />
+
+          <label for="message">Describe your issue</label>
+          <input type="text" id="message" required />
+          <button>
+            <button type="submit" class="btn-primary">Submit</button>
+          </button>
+        </form>
+      </section>
+    </aside>
+
+    <!-- 🟦 Home Button Section Start -->
+    <style>
+      .home-button-container {
+        margin: 30px 0 20px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .home-button {
+        background-color: #3f51b5;
+        color: white;
+        text-decoration: none;
+        padding: 12px 25px;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .home-button:hover {
+        background-color: #303f9f;
+      }
+    </style>
+
+    <!-- 🟦 Home Button Section End -->
+    <p style="text-align: center; font-size: 14px; color: #777">
+      This site is a learning project — improvements and real-world features are
+      on the way!
+    </p>
+
+    <script>
+      const form = document.querySelector(".cnsform");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault(); // stop form from reloading the page
+        alert("Form submitted successfully!");
+        form.reset(); // optional: clears the form
+      });
+    </script>
+  </body>
+</html>
